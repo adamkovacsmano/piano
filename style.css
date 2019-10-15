@@ -1,0 +1,16 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.pressed{
+  border: 2px solid limegreen;
+  color: limegreen;
+}
+
+button{
+  font-size: 2em;
+  padding: 0.5em;
+  border: 1px solid black;
+  background: transparent;
+}
