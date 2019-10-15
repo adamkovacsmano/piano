@@ -1,25 +1,22 @@
+// import Key from "./Keys.js";
 
-let keyA = document.getElementById("a-key");
+// let aKey = new Key(A, a-key);
 
-const keyPressed = () => {
-  keyA.classList.add("pressed");
-}
-
-const keyLift = () => {
-  keyA.classList.remove("pressed");
-}
-
+let piano = document.getElementById("keylist");
+piano.innerHTML += `<button>A</button><button>H</button>`;
 
 document.onkeydown = pressEvent => {
   if(pressEvent.key === "a"){
-   keyPressed();
+   aKey.keyPressed;
   }
 }
 
 
-document.onkeyup = liftEvent =>{
-  if(liftEvent.key === "a"){
-  keyLift();
-  } 
-}
-
+/* <button>C</button>
+<button>D</button>
+<button>E</button>
+<button>F</button>
+<button>G</button>
+<button>A</button>
+<button>H</button>
+<button>C</button> */
