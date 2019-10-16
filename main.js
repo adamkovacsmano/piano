@@ -1,22 +1,28 @@
-// import Key from "./Keys.js";
+import Key from "./data/Keys.js";
 
-// let aKey = new Key(A, a-key);
+let dataArray = ["c", "d", "e", "f", "g", "a", "h", "c"];
 
-let piano = document.getElementById("keylist");
-piano.innerHTML += `<button>A</button><button>H</button>`;
+let keyArray = dataArray.map(i => new Key(i));
+
+
+
+let aKey = new Key("a");
 
 document.onkeydown = pressEvent => {
   if(pressEvent.key === "a"){
-   aKey.keyPressed;
+   kayArray.keyPressed();
   }
 }
 
+document.onkeyup = liftEvent => {
+  if(liftEvent.key === "a"){
+    aKey.keyLift();
+  }
+}
 
-/* <button>C</button>
-<button>D</button>
-<button>E</button>
-<button>F</button>
-<button>G</button>
-<button>A</button>
-<button>H</button>
-<button>C</button> */
+const renderFunc = () => {
+  let piano = document.getElementById("keylist");
+  keyArray.forEach(key => piano.innerHTML += key.render())
+}
+
+renderFunc();
