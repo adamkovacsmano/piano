@@ -1,8 +1,6 @@
 export default class Key {
   constructor(idName){
     this.idName = idName
-    this.variable;
-    // this.audio = audio
   }
 
   keyPressed(){
