@@ -3,14 +3,74 @@
   padding: 0px;
 }
 
+main{
+  background-image: url("./img/discoball.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .pressed{
   border: 2px solid limegreen;
   color: limegreen;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 button{
+  width: 60px;
   font-size: 2em;
   padding: 0.5em;
   border: 1px solid black;
   background: transparent;
+  margin: 5px;
+  background: #fff;
+}
+
+.pianoboard{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+h1{
+  background: linear-gradient(to right, rgb(228, 54, 184) 0%, #ec6c16 100%);
+  /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; */
+  /* filter: brightness(150%); */
+  /* /* -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  border-radius: 10px;  
+  font-weight: 100;
+  font-family: 'Monoton', cursive;
+  font-size: 2.5em;
+  position: absolute;
+  left: 50%;
+  top: 21%;
+  transform: translateX(-50%);
+  width: 60%;
+  text-align: center;
+}
+
+h2{
+  background: linear-gradient(to right, rgb(228, 54, 184) 0%, #2b16ec 100%);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  filter: brightness(150%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  font-weight: 100;
+  font-family: 'Monoton', cursive;
+  font-size: 2.5em;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 60%;
+  text-align: center;
 }
