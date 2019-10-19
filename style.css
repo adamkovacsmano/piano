@@ -23,6 +23,20 @@ main{
   }
 }
 
+#img{
+  width: 60px;
+  height: 70px;
+  background-image: url("./img/liam.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  margin: 5px;
+  
+}
+
 button{
   width: 60px;
   font-size: 2em;
@@ -31,6 +45,7 @@ button{
   background: transparent;
   margin: 5px;
   background: #fff;
+  z-index: 10;
 }
 
 .pianoboard{
